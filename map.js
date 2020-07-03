@@ -1,13 +1,13 @@
 
 // 設定中心點
 var map = L.map('map', {
-    center: [22.604799, 120.2976256],
+    // center: [22.604799, 120.2976256],
     zoom: 16
 });
 
 // setView 可以設定地圖座標
 // watch 則是持續監聽使用者的位置
-// map.locate({ setView: true, watch: true });
+map.locate({ setView: true, watch: true });
 
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
